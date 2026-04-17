@@ -1,0 +1,64 @@
+Regra	Descrição
+
+RN01	Nome do produto é obrigatório (não pode ser vazio ou só espaços)
+RN02	Código de barras deve ser único no sistema (não pode repetir)
+RN03	Preço de custo não pode ser negativo
+RN04	Preço de venda deve ser maior ou igual ao preço de custo
+RN05	Estoque mínimo não pode ser negativo (pode ser zero)
+RN06	Estoque máximo (se houver) deve ser maior que o estoque mínimo
+RN07	Produto só pode ser excluído se nunca teve movimentação (entrada/saída)
+
+
+
+2. Regras sobre Movimentação de Estoque (Entrada/Saída)
+
+Regra	Descrição
+RN08	Quantidade movimentada deve ser maior que zero
+RN09	Em uma saída, a quantidade não pode ser maior que o estoque atual do produto
+RN10	Toda movimentação deve ter um motivo/documento associado (nota fiscal, venda, avaria, etc.)
+RN11	Não é permitido movimentar estoque de produto inativo/descontinuado
+RN12	Ao dar entrada, o custo médio do produto deve ser recalculado (se aplicável)
+RN13	Ao dar saída, o lucro bruto pode ser calculado com base no custo médio
+
+
+
+3. Regras sobre Fornecedor
+
+Regra	Descrição
+RN14	CNPJ/CPF do fornecedor deve ser válido e único
+RN15	Nome/Razão social é obrigatório
+RN16	Um produto pode ter múltiplos fornecedores, mas um principal deve ser marcado
+
+
+
+4. Regras sobre Categoria
+
+Regra	Descrição
+RN17	Nome da categoria é obrigatório e único
+RN18	Não é possível excluir uma categoria que tenha produtos vinculados
+
+
+
+5. Regras de Estoque Mínimo e Reposição
+
+Regra	Descrição
+RN19	Quando o estoque atual for menor ou igual ao estoque mínimo, o sistema deve gerar um alerta de reposição
+RN20	O ponto de pedido pode ser configurado (ex: estoque mínimo + lote de compra)
+
+
+
+6. Regras sobre Validade (se produtos perecíveis)
+
+Regra	Descrição
+RN21	Data de validade não pode ser anterior à data atual no momento do cadastro
+RN22	Ao dar saída, produtos mais próximos do vencimento saem primeiro (PEPS)
+RN23	Produto vencido não pode ser vendido, apenas baixado como perda
+
+
+
+7. Regras sobre Usuário e Permissões (se tiver login)
+
+Regra	Descrição
+RN24	Apenas usuários com perfil "Administrador" podem excluir produtos ou movimentações
+RN25	Apenas usuários com perfil "Estoquista" ou superior podem dar entrada/saída
+RN26	Usuário "Consultor" pode apenas visualizar relatórios

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "uj+LDhLYR+8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kaua\\source\\repos\\estoque_s_a\\estoque_s_a\\estoque_s_a.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kaua\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
+    "C:\\Users\\kaua\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
+    "C:\\Users\\kaua\\.nuget\\packages\\k4os.compression.lz4.streams\\1.3.5\\k4os.compression.lz4.streams.1.3.5.nupkg.sha512",
+    "C:\\Users\\kaua\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
+    "C:\\Users\\kaua\\.nuget\\packages\\mysql.data\\8.0.33\\mysql.data.8.0.33.nupkg.sha512",
+    "C:\\Users\\kaua\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}
